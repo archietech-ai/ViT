@@ -57,7 +57,19 @@ BiT-L and Noisy Student are a bit older than ViL and they are CNN based.
 
 ViT outperform ResNet.
 
-In the first row we see that when model is larger (meaning less inductive bias w ehave) the model can learn better on huge data set compare to smaller data set. ViT-H performs better than ViT-L
+In the first row we see that when model is larger (meaning less inductive bias we have) the model can learn better on huge data set compare to smaller data set. ViT-H performs better than ViT-L
+
+When we were creating patches we could create 16x16 patches (meaning we slice the picture into 16x16) where each pacth is 14x14x3.
+
+We could also create 14x14 patches that each creates 16x16x3.
+
+In the table where we have ViT-H/14 or ViT-L/16 it refers to patch sizes.
+
+The last row is very important as it shows the ViL is less computationally extensive compare to older models when it comes to fine tuning. ViL-H uses 2.5 K of TPUv3-core-days while BiT-L uses 9.9 K
+
+For exampple if we have 1000 TPU cores, Ours-I21k model needs 0:23 of a day (like 1/4 day) almost 6 hours. Compare that with BiT-L that needs almost 10 days if we have 1000 TPUs.
+
+So when we have many many data, ViL is better while we have limited data, CNN is still better.
 
 
 
