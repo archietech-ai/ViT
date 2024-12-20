@@ -77,3 +77,6 @@ So when we have many many data, ViL is better while we have limited data, CNN is
 
 
 
+
+
+
