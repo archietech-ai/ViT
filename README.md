@@ -10,6 +10,8 @@ The idea is to divide the picture into pieces like different frames or "tokens" 
 
 ### Inductive Bias:
 
+![image](https://github.com/user-attachments/assets/e4d3e51a-1875-4311-a1ff-01cf9c0e5f9a)
+
 The assumptions we make about our data (like linearality in linear learners) is cslled Inductive Bias
 More assumptions we make, more restrictive and smaller the solution domain is, so the found solution is not neccessarly the best answer. More intensive the assumptions, the number of solutions will be restrictive and sub-optimal.
 
@@ -62,5 +64,5 @@ In the first row we see that when model is larger (meaning less inductive bias w
 
 
 
-![image](https://github.com/user-attachments/assets/e4d3e51a-1875-4311-a1ff-01cf9c0e5f9a)
+
 
