@@ -71,9 +71,27 @@ For exampple if we have 1000 TPU cores, Ours-I21k model needs 0:23 of a day (lik
 
 So when we have many many data, ViL is better while we have limited data, CNN is still better.
 
+The following image shows if we have more data (on X axis), the accuracy (Y axis) increases. For less amount of data, BiT (gray square) has higher accuracy. Larger models have more capacity to learn. So when we give more data, bigger models have capacity to learn from it (as they do not have too much inductive bias)
+
+![image](https://github.com/user-attachments/assets/027b7416-2aef-4d18-ae64-5979812fdfc3)
 
 
+When the size of patches is decreased, the number of them are increased. That means we will have more tokens, that it leads to more complex model at the end. More token=more data--> more complex model
 
+So decreasing the patch size is a way to increase the model quality (becuase of having more data)
+
+### Chinchilla paper
+The Chinchilla paper, officially titled "Training Compute-Optimal Large Language Models" by researchers at DeepMind, explores the relationship between model size (number of parameters) and data size (amount of training data) for training large language models efficiently. It provides critical insights into how to balance these factors to optimize model performance under a fixed compute budget.
+
+The paper proposes that for a given compute budget, scaling both model size and training data proportionally is critical for achieving optimal performance. They argue that:
+
+Bigger models are not always better if training data is insufficient.
+
+Overly large models can underperform because they fail to generalize effectively when trained on limited data.
+Undertraining models wastes compute.
+
+Many large models (e.g., GPT-3) were trained with suboptimal data sizes relative to their parameter count.
+The study empirically shows that training smaller models on more data can often achieve better results than training excessively large models on less data.
 
 
 
