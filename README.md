@@ -100,6 +100,9 @@ Many large models (e.g., GPT-3) were trained with suboptimal data sizes relative
 The study empirically shows that training smaller models on more data can often achieve better results than training excessively large models on less data.
  
 
+X axis is the encoder numbers
+Y axis 
+![image](https://github.com/user-attachments/assets/9c286cfe-53fb-4237-b405-f140b6bd4eaa)
 
 
 
