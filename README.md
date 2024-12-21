@@ -92,7 +92,7 @@ Undertraining models wastes compute.
 
 Many large models (e.g., GPT-3) were trained with suboptimal data sizes relative to their parameter count.
 The study empirically shows that training smaller models on more data can often achieve better results than training excessively large models on less data.
-
+ 
 
 
 
